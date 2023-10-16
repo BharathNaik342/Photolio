@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid PHOTOLIO</title>
+    <style>
+    /* Header Styling */
+    header{
+      color:rgb(180, 180, 175) ;
+      background-color: cornsilk;
+      font-family: "Montserrat", sans-serif;
+      height: 275px;
+      font-size:36px;
+      margin: 10px 0;
+      text-align: center!important;
+    }
+    /* Paragraph Styling */
+    p{
+      font-size: 26px;
+    }
+    /* Button Styling */
+    button{
+      height: 40px; 
+      width: 300px;
+      border-radius: 25px; 
+      opacity: 0.8; 
+      background-color: black;
+      color: antiquewhite;
+    }
+    /* Header Styling */        
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 248px 330px 240px;
+    }
+    /* Footer Styling */
+    footer{
+      font-size: 26px;
+      text-align: center;
+      margin-top: 100px;
+      background-color: rgb(206, 204, 204);
+      width: 100%;
+      height: 125px;
+      line-height: 135px;
+    }
+/* Responsive layout - makes a two column-layout instead of four columns */
+    @media (max-width: 800px) {
+      .one {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      .one {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+    </style>
+    </head>
+    <body>
+      <!-- Header -->
+      <header>
+        <h1><b>PHOTOLIO</b></h1>
+        <p><b>A template made by w3.css for photographers.</b></p>
+        <button >Toggle Grid Padding</button>
+      </header>
+      <br><br>
+      <!-- Photo Grid -->
+      <div class="grid-container">
+        <div class="one">
+          <img src="../Images/rocks.jpg" style="width:100%">  
+          <img src="../Images/sound.jpg" style="width:100%">  
+          <img src="../Images/woods.jpg" style="width:100%">  
+          <img src="../Images/rock.jpg" style="width:100%">   
+          <img src="../Images/nature.jpg" style="width:100%"> 
+          <img src="../Images/rocks.jpg" style="width:100%">  
+        </div>
+      
+        <div class="one">
+          <img src="../Images/coffee.jpg" style="width:100%">
+          <img src="../Images/bridge.jpg" style="width:100%">
+          <img src="../Images/notebook.jpg" style="width:100%">
+          <img src="../Images/london.jpg" style="width:100%">
+          <img src="../Images/rocks.jpg" style="width:100%">
+          <img src="../Images/avatar_g.jpg" style="width:100%">
+        </div>
+      
+        <div class="one">
+          <img src="../Images/rocks.jpg" style="width:100%">
+          <img src="../Images/notebook.jpg" style="width:100%">
+          <img src="../Images/gondol.jpg" style="width:100%">
+          <img src="../Images/skies.jpg" style="width:100%">
+          <img src="../Images/lights.jpg" style="width:100%">
+          <img src="../Images/workshop.jpg" style="width:100%">
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/" target="_blank">w3.css</a></p>
+      </footer>
+</body>
+</html>
